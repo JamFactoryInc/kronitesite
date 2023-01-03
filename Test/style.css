@@ -1,0 +1,99 @@
+:root {
+    --ok: #3fcc96;
+    --pending: #3f7acc;
+    --disabled: #555;
+    --r-ouline: 0.3rem solid;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    display: block;
+    bottom: 0;
+    position: sticky;
+    max-width: 100vw;
+    height: 5rem;
+    background-color: #3f7acc;
+    z-index: 1;
+}
+
+.page {
+    background-color: #222;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+    box-shadow: 0 0 2rem #0008;
+}
+#roadmap {
+    position: relative;
+}
+h1 {
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    height: 1em;
+    padding: 1em;
+    color: #ccc;
+    text-shadow: 0.5rem 0.5rem 1rem #000;
+    font-weight: 100;
+}
+.readable {
+    background-color: #0003;
+    height: 100%;
+    padding: 2rem;
+}
+
+.roadmap {
+    width: 60vw;
+}
+
+.roadmapitem,
+.progress {
+    font-size: 2rem;
+    display: block;
+    border-radius: 1rem;
+    max-height: 3rem;
+    height: 3rem;
+    width: 80vw;
+    padding: 1em;
+    margin-bottom: 1rem;
+    background-color: #111;
+    outline-offset: -0.3rem;
+}
+.done {
+    color: var(--ok);
+}
+.done .roadmapitem {
+    outline: var(--ok) 0.3rem solid;
+    background-color: #3fcc9620;
+}
+
+.pending {
+    color: var(--pending);
+}
+.pending .roadmapitem {
+    outline: var(--pending) 0.3rem solid;
+    margin-left: 2rem;
+}
+.progress {
+    margin: -4.5rem -2rem;
+    display: block;
+    background-color: #3f7acc20;
+    height: 3rem;
+}
+
+.todo {
+    color: var(--disabled);
+}
+.todo .roadmapitem {
+    outline: var(--disabled) 0.3rem solid;
+}

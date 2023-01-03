@@ -1,0 +1,3 @@
+# thekronite.com/robots.txt
+User-agent: googlebot
+Disallow: /notfound/
