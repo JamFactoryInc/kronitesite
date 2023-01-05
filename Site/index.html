@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Kronite - Homepage</title>
+    <meta name="description" content="Roadmap, news, and other information for The Kronite" />
+</head>
+
+<body>
+    <section class="page">
+        <h1>
+            The Kronite
+        </h1>
+    </section>
+    <section class="page" id="upcoming">
+        <h2>Upcoming</h2>
+        <div class="readable"></div>
+    </section>
+    <section class="page" id="news">
+        <h2>News</h2>
+        <div class="readable"></div>
+    </section>
+    <section class="page" id="roadmap">
+        <h2>Roadmap</h2>
+        <div class="readable">
+            <div class="done">
+                <h3>Done</h3>
+                <span class="roadmapitem">Set up a landing page</span>
+                <span class="roadmapitem">wow</span>
+            </div>
+            <div class="pending">
+                <h3>In Development</h3>
+                <span class="pending roadmapitem" pct="50%">
+                    wow
+                </span>
+            </div>
+            <div class="todo">
+                <h3>To-Do</h3>
+                <span class="todo roadmapitem">wow</span>
+            </div>
+        </div>
+    </section>
+    <section id="navbar">
+    </section>
+</body>
+<style>
+     :root {
+        --ok: #3fcc96;
+        --pending: #3f7acc;
+        --disabled: #777;
+        --r-ouline: 0.3rem solid;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .page {
+        background-color: #222;
+        height: 100vh;
+    }
+    
+    h1,
+    h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 3rem;
+        height: 1em;
+        padding: 1em;
+        color: #ccc;
+    }
+    
+    h1 {
+        width: 100vw;
+        position: absolute;
+        margin-top: 40vh !important;
+        padding: unset;
+        font-size: 4rem;
+    }
+    
+    .readable {
+        background-color: #0003;
+        height: 100%;
+        padding: 2rem;
+    }
+</style>
+<link rel="stylesheet" href="secondary.css" media="print" onload="this.media='all'" />
+<script src="index.js"></script>
+
+</html>
