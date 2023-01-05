@@ -1,7 +1,3 @@
-* {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
 .page {
     overflow: hidden;
     top: 0;
@@ -23,13 +19,6 @@
     height: 100%;
     display: block;
     padding: 2rem;
-}
-
-h1,
-h2 {
-    letter-spacing: 0.1rem;
-    text-shadow: 0.5rem 0.5rem 1rem #000;
-    font-weight: 100;
 }
 
 #roadmap {

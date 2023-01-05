@@ -54,6 +54,10 @@
         --r-ouline: 0.3rem solid;
     }
     
+    * {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    
     body {
         margin: 0;
     }
@@ -71,9 +75,12 @@
         height: 1em;
         padding: 1em;
         color: #ccc;
+        letter-spacing: 0.1rem;
+        text-shadow: 0.5rem 0.5rem 1rem #000;
+        font-weight: 100;
     }
     
-    h1 {
+    section>h1 {
         width: 100vw;
         position: absolute;
         margin-top: 40vh !important;
@@ -87,7 +94,7 @@
         padding: 2rem;
     }
 </style>
-<link rel="stylesheet" href="secondary.css" media="print" onload="this.media='all'" />
+<link rel="stylesheet" href="./styles/news.css">
 <script src="index.js"></script>
 
 </html>
